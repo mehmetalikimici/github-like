@@ -1,0 +1,121 @@
+.main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  font-family: $my-font;
+
+  &_about {
+    margin-top: 20px;
+
+    img {
+      width: 240px;
+      height: 240px;
+    }
+
+    &_title {
+      margin-top: 30px;
+
+      h3 {
+        padding-bottom: 10px;
+      }
+
+      h4 {
+        padding-bottom: 30px;
+      }
+
+      button {
+        width: 100%;
+        height: 36px;
+        border: 1px solid rgba(27, 31, 35, 0.2);
+        background-color: #eff3f6;
+        background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+        border-radius: 3px;
+      }
+    }
+
+    &_dsc {
+      margin-top: 16px;
+      p{
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &_projects {
+    width: 100%;
+    margin-left: 40px;
+    &_titles {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 40px;
+      a {
+        text-decoration: none;
+        color: #586069;
+      }
+    }
+    &_links {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #586069;
+      }
+    }
+    &_container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        &_bar {
+            margin-top: 20px;
+            margin-right: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 450px;
+            height: 120px;
+            position: relative;
+
+            .up{
+                display: flex;
+
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    margin-left: 5px;
+                    font-weight: 600;
+                }
+                
+                .right{
+                    i{
+                        position: absolute;
+                        right: 10px;
+                    }
+                }
+                
+            }
+
+            .down{
+                margin-top: 60px;
+                margin-left: 5px;
+                display: flex;
+                align-items: center;
+                span{
+                    background-color: #563d7c;
+                    height: 12px;
+                    width: 12px;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+                p{
+                    margin-left: 3px;
+                    font-size: 14px;
+                }
+            }
+          }
+    }
+    
+  }
+}
